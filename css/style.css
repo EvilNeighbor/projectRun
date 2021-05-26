@@ -1,3 +1,12 @@
+* {
+  font-family: "Museo sans";
+}
+
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
 .promo {
   min-height: 650px;
   padding: 20px 0 93px 0;
@@ -154,7 +163,107 @@
   margin-top: 65px;
 }
 
-.container {
-  max-width: 950px;
-  margin: 0 auto;
+.advantages {
+  background: #f6f6f6;
+  padding: 80px 10px 60px;
+}
+
+.advantages .title {
+  text-align: center;
+  color: #0d0d0d;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.advantages-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.advantages-item {
+  max-width: 280px;
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.advantages-item__subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 35px;
+  color: #0d0d0d;
+}
+
+.advantages-item__descr {
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 20px;
+  text-align: center;
+  color: #0d0d0d;
+}
+
+.advantages-item__descr a {
+  text-decoration: underline;
+  color: red;
+}
+
+@media (max-width: 991px) {
+  .promo {
+    padding: 5px 10px;
+  }
+  .promo__wrapper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .promo .header__official {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .advantages {
+    padding-top: 30px;
+  }
+  .advantages-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .advantages-item {
+    margin-top: 20px;
+    padding: 5px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+  }
+  .advantages-item__subtitle {
+    margin-top: 10px;
+  }
+  .advantages-item__descr {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .promo__header {
+    font-size: 30px;
+  }
+  .promo__subheader {
+    font-size: 20px;
+  }
 }

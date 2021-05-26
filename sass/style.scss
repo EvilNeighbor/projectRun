@@ -1,10 +1,14 @@
+* {
+  font-family: "Museo sans";
+}
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+}
 @import "base/variables";
 @import "base/mixins";
 @import "blocks/promo";
 @import "blocks/header";
 @import "blocks/button";
-
-.container {
-  max-width: 950px;
-  margin: 0 auto;
-}
+@import "blocks/advantages";
+@import "blocks/media";
